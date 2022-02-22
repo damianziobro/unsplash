@@ -12,10 +12,7 @@ export const Listing = ({photos}: Props) => {
             {photos.map((photo) => (
                 <ImageCard
                     key={photo.id}
-                    src={photo.urls.regular}
-                    id={photo.id}
-                    isLiked={true}
-                    onWishlistIconClick={() => console.log('Wishlist button clicked')}
+                    photo={photo}
                 />
             ))}
         </div>

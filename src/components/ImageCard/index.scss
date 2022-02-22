@@ -3,6 +3,12 @@
   display: block;
   width: 100%;
   margin-bottom: 20px;
+
+  &:hover {
+    .ImageCard__wishlistButton {
+      display: block;
+    }
+  }
 }
 
 .ImageCard__image {
@@ -20,9 +26,14 @@
   padding: 10px;
   border: none;
   border-radius: 10px;
+  display: none;
 }
 
 .ImageCard__wishlistIcon {
   width: 20px;
   height: 20px;
+}
+
+.ImageCard__wishlistButton--liked {
+  display: block;
 }
