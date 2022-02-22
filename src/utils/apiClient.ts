@@ -1,0 +1,1 @@
+export const apiClient = (url: string) => fetch(`${process.env.REACT_APP_UNSPLASH_API}${url}?client_id=${process.env.REACT_APP_UNSPLASH_API_ACCESS_KEY}&per_page=40`);
