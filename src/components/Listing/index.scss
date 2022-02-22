@@ -1,5 +1,19 @@
 .Listing {
-  padding: 48px 48px 48px 138px;
-  column-count: 5;
-  column-gap: 30px;
+  padding: 24px;
+  column-count: 2;
+  column-gap: 20px;
+
+  @media only screen and (min-width: 600px) {
+    column-count: 3;
+    padding: 48px 48px 48px 138px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    column-count: 4;
+    column-gap: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    column-count: 5;
+  }
 }

@@ -9,12 +9,11 @@ export enum NavigationItemIcon {
 
 interface Props {
     iconType: NavigationItemIcon
-    active?: boolean
 }
 
-export const NavigationItem = ({iconType, active}: Props) => {
+export const NavigationItem = ({iconType}: Props) => {
     return (
-        <div className={`NavigationItem ${active ? 'NavigationItem--active' : ''}`}>
+        <div className={'NavigationItem'}>
             {iconType === NavigationItemIcon.Listing && <ListingIcon/>}
             {iconType === NavigationItemIcon.Wishlist && <WishlistIcon/>}
         </div>

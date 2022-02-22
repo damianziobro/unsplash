@@ -4,36 +4,40 @@
   width: 100%;
   margin-bottom: 20px;
 
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+    background-color: lightgray;
+  }
+
+  &__wishlistIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__wishlistButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #2D9CDB;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    display: none;
+
+    @media only screen and (min-width: 600px) {
+      padding: 10px;
+    }
+
+    &--liked {
+      display: block;
+    }
+  }
+
   &:hover {
     .ImageCard__wishlistButton {
       display: block;
     }
   }
-}
-
-.ImageCard__image {
-  width: 100%;
-  border-radius: 10px;
-  background-color: lightgray;
-}
-
-.ImageCard__wishlistButton {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  cursor: pointer;
-  background-color: #2D9CDB;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  display: none;
-}
-
-.ImageCard__wishlistIcon {
-  width: 20px;
-  height: 20px;
-}
-
-.ImageCard__wishlistButton--liked {
-  display: block;
 }

@@ -1,8 +1,7 @@
 .NavigationItem {
-  padding: 24px;
-}
+  padding: 18px;
 
-.NavigationItem--active {
-  background-color: #828282;
-  border-radius: 10px;
+  @media only screen and (min-width: 600px) {
+    padding: 24px;
+  }
 }

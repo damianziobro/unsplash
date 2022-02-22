@@ -2,5 +2,24 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 50%;
+
+  width: 70%;
+
+  @media only screen and (min-width: 600px) {
+    width: auto;
+    height: 70%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (min-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item--active {
+    background-color: #828282;
+    border-radius: 10px;
+  }
 }

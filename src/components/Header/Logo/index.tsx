@@ -1,5 +1,3 @@
-import './index.scss';
-
 export const Logo = () => {
     return (
         <svg
@@ -8,7 +6,6 @@ export const Logo = () => {
             height="22"
             fill="none"
             viewBox="0 0 24 22"
-            className={'Logo'}
         >
             <path
                 fill="#fff"

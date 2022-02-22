@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {apiClient} from "../../utils/apiClient";
 import {PhotoType} from "../../types/PhotoTypes";
 import {Listing} from "../../components/Listing";
+import {FetchingStatus} from "../../components/FetchingStatus";
 
 export const Feed = () => {
     const [photos, setPhotos] = useState<PhotoType[]>([]);
@@ -30,9 +31,10 @@ export const Feed = () => {
             })
     }, [])
 
-    if (loading || !photos) return <div>Loading...</div>
-    if (error) return <div>Error</div>
+    if (loading || !photos) return <FetchingStatus status={'Loading...'}/>
+    if (error) return <FetchingStatus status={'Something went wrong...'}/>
+
     return (
-        <Listing photos={photos} />
+        <Listing photos={photos}/>
     )
 }

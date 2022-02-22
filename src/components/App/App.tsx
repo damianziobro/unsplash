@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <main className={'App-main'}>
+            <main className={'App__main'}>
                 <Routes>
                     <Route path="/" element={<Feed />}>
                         <Route path="details/:imageId" element={<div>todo <Outlet /></div>}/>
