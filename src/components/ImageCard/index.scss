@@ -1,0 +1,28 @@
+.ImageCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ImageCard__image {
+  width: 100%;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.ImageCard__wishlistButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background-color: #2D9CDB;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.ImageCard__wishlistIcon {
+  width: 20px;
+  height: 20px;
+}

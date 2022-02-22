@@ -1,5 +1,5 @@
-import {ListingIcon} from "./ListingIcon";
-import {WishlistIcon} from "./WishlistIcon";
+import {ListingIcon} from "../../ListingIcon";
+import {WishlistIcon} from "../../WishlistIcon";
 import './index.scss';
 
 export enum NavigationItemIcon {

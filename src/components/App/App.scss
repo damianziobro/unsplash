@@ -1,6 +1,10 @@
 .App {
-  display: flex;
-  flex-direction: row;
+  background-color: #2B2B2B;
+  min-height: 100vh;
+}
+
+.App-main {
+  width: 100%;
 }
 
 //.App-logo {

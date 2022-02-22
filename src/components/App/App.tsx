@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
-import {Route, Routes} from "react-router-dom";
+import {Outlet, Route, Routes} from "react-router-dom";
 import {Header} from "../Header";
+import {Feed} from "../../pages/Feed";
+import {Wishlist} from "../../pages/Wishlist";
 
 function App() {
     return (
@@ -9,8 +11,10 @@ function App() {
             <Header/>
             <main className={'App-main'}>
                 <Routes>
-                    <Route path="/" element={<div>home</div>}/>
-                    <Route path="/:imageId" element={<div>id</div>}/>
+                    <Route path="/" element={<Feed />}>
+                        <Route path="details/:imageId" element={<div>todo <Outlet /></div>}/>
+                    </Route>
+                    <Route path="wishlist" element={<Wishlist />}/>
                     <Route path="*" element={<div>not found</div>}/>
                 </Routes>
             </main>
