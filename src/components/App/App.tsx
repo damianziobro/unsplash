@@ -4,6 +4,7 @@ import {Outlet, Route, Routes} from "react-router-dom";
 import {Header} from "../Header";
 import {Feed} from "../../pages/Feed";
 import {Wishlist} from "../../pages/Wishlist";
+import {Modal} from "../Modal";
 
 function App() {
     return (
@@ -12,9 +13,9 @@ function App() {
             <main className={'App__main'}>
                 <Routes>
                     <Route path="/" element={<Feed />}>
-                        <Route path="details/:imageId" element={<div>todo <Outlet /></div>}/>
+                        <Route path="details/:imageId" element={<Modal />}/>
                     </Route>
-                    <Route path="wishlist" element={<Wishlist />}/>
+                    <Route path="wishlist" element={<Wishlist />} />
                     <Route path="*" element={<div>not found</div>}/>
                 </Routes>
             </main>
